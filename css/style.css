@@ -1,0 +1,97 @@
+.header {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+.header-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.header-nav-item a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+.Project {
+  padding: 20px;
+  background-color: #eee;
+}
+.Project-item-foto {
+  width: 100px;
+  height: 100px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  width: 1600px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.first-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2f303a;
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+  background: #2196f3;
+}
+.second-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1170px;
+  height: 286px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.item {
+  margin: 15px;
+}
+h4,
+p {
+  margin: 0;
+}
+.third-main-container {
+  width: 1170px;
+  height: 386px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+}
+.fourth-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-justify: center;
+  width: 1600px;
+  height: 648px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.footer-container {
+  width: 1600px;
+  height: 252px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
