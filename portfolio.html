@@ -1,110 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/portfolio.css">
-    <link rel="stylesheet" href="path/to/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
+ <!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо - WebStudio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
     <header>
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li class="header-nav-item">
-            <a href="./index.html" class="header-nav-link">WebStudio</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="./index.html" class="header-nav-link">студія</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="./portfolio.html" class="header-nav-link">портфоліо</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#" class="header-nav-link">контакти</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#" class="header-nav-link">info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="#" class="header-nav-link">+38 096 111 11 11</a>
-          </li class="header-nav-item">
-        </ul>
-      </nav>
+        <div class="container">
+            <div class="logo">WebStudio</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Студія</a></li>
+                    <li><a href="portfolio.html">Портфоліо</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <a href="mailto:info@webstudio.com">info@webstudio.com</a>
+                <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </div>
+        </div>
     </header>
-    <main class="Project">
-      <section>
-        <nav>
-          <ul>
-            <li class="Project-item" >
-              <a href="./portfolio.html">Усі</a>
-            </li>
-            <li class="Project-item" >
-              <a href="#">Веб-сайти</a>
-            </li>
-            <li class="Project-item" >
-              <a href="#">Додатки</a>
-            </li>
-            <li class="Project-item" >
-              <a href="#">Дизайн</a>
-            </li>
-            <li class="Project-item" >
-              <a href="#">Маркетинг</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="images">  <img class="image" src="./img/section/Project/Project_1.jpg" alt="" />
-          <h4>Технокряк</h4>
-          <p>Веб-сайт</p>
-          <img class="image" src="./img/section/Project/Project_2.jpg" alt="" />
-          <h4>Постер New Orlean vs Golden Star</h4>
-          <p>Дизайн</p>
-          <img class="image" src="./img/section/Project/Project_3.jpg" alt="" />
-          <h4>Ресторан Seafood</h4>
-          <p>Додаток</p>
-          <img class="image" src="./img/section/Project/Project_4.jpg" alt="" />
-          <h4>Проєкт Prime</h4>
-          <p>Маркетинг</p>
-          <img class="image" src="./img/section/Project/Project_5.jpg" alt="" />
-          <h4>Проєкт Boxes</h4>
-          <p>Додаток</p>
-          <img class="Project-item-foto" src="./img/section/Project/Project_6.jpg" alt="" />
-          <h4>Inspiration has no Borders</h4>
-          <p>Веб-сайт</p>
-          <img class="image" src="/img/section/Project/Project_7.jpg" alt="" />
-          <h4>Видання Limited Edition</h4>
-          <p>Дизайн</p>
-          <img class="image" src="./img/section/Project/Project_8.jpg" alt="" />
-          <h4>Проєкт LAB</h4>
-          <p>Маркетинг</p>
-          <img class="image" src="./img/section/Project/Project_9.jpg" alt="" />
-          <h4>Growing Business</h4>
-          <p>Додаток</p></div>
-      </section>
+    <main>
+        <section class="portfolio">
+            <div class="container">
+                <h2>Портфоліо</h2>
+                <div class="filter-buttons">
+                    <button class="active" data-filter="all">Усі</button>
+                    <button data-filter="web">Веб-сайти</button>
+                    <button data-filter="design">Дизайн</button>
+                    <button data-filter="marketing">Маркетинг</button>
+                </div>
+                <div class="portfolio-items">
+                    <div class="portfolio-item" data-category="web">
+                        <img src="./img/section/Project/Project_1.jpg" alt="Project 1">
+                        <h3>Технокрек</h3>
+                        <p>Веб-сайт</p>
+                    </div>
+                    <div class="portfolio-item" data-category="design">
+                        <img src="./img/section/Project/Project_2.jpg" alt="Project 2">
+                        <h3>Постер New Orlean vs Golden Star</h3>
+                        <p>Дизайн</p>
+                    </div>
+                    <div class="portfolio-item" data-category="design">
+                        <img src="./img/section/Project/Project_3.jpg" alt="Project 3">
+                        <h3>Ресторан Seafood</h3>
+                        <p>Дизайн</p>
+                    </div>
+                    <div class="portfolio-item" data-category="marketing">
+                        <img src="./img/section/Project/Project_4.jpg" alt="Project 4">
+                        <h3>Проект Prime</h3>
+                        <p>Маркетинг</p>
+                    </div>
+                    <div class="portfolio-item" data-category="design">
+                        <img src="./img/section/Project/Project_5.jpg" alt="Project 5">
+                        <h3>Проект Boxes</h3>
+                        <p>Дизайн</п>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <img src="./img/section/Project/Project_6.jpg" alt="Project 6">
+                        <h3>Inspiration has no Borders</h3>
+                        <p>Веб-сайт</p>
+                    </div>
+                    <div class="portfolio-item" data-category="design">
+                        <img src="./img/section/Project/Project_7.jpg" alt="Project 7">
+                        <h3>Видання Limited Edition</h3>
+                        <p>Дизайн</p>
+                    </div>
+                    <div class="portfolio-item" data-category="marketing">
+                        <img src="./img/section/Project/Project_8.jpg" alt="Project 8">
+                        <h3>Проект LAB</h3>
+                        <p>Маркетинг</p>
+                    </div>
+                    <div class="portfolio-item" data-category="design">
+                        <img src="./img/section/Project/Project_9 (1).jpg" alt="Project 9">
+                        <h3>Growing Business</h3>
+                        <p>Дизайн</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-      <nav class="footer-nav">
-        <ul>
-          <li class="Footer-nav-item">
-            <a href="./index.html">WebStudio</a>
-          </li>
-          <li class="Footer-nav-item">
-            <a
-              href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000004%2C30.538092&z=17"
-              >м. Київ, пр-т Лесі Українки, 26</a>
-          </li>
-          <li class="Footer-nav-item">
-            <a href="#">info@devstudio.com</a>
-          </li>
-          <li class="Footer-nav-item" >
-            <a href="#">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </nav>
+        <div class="container">
+            <p>WebStudio</p>
+            <p>м. Київ, вул. Петра Набойченка, 25</п>
+            <п>info@webstudio.com</п>
+            <п>+38 096 111 11 11</п>
+        </div>
     </footer>
-  </body>
-</html>
 
+    <script src="portfolio.js"></script>
+</body>
+</html>
